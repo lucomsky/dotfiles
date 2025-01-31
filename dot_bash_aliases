@@ -1,0 +1,5 @@
+alias wezterm='flatpak run org.wezfurlong.wezterm'
+
+msk_git_archive() {
+  git archive --format=zip HEAD >../aicopilot-lp0571-$(date +%FT%H%M).zip
+}
