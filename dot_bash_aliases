@@ -1,5 +1,7 @@
 alias wezterm='flatpak run org.wezfurlong.wezterm'
 
-msk_git_archive() {
-  git archive --format=zip HEAD >../aicopilot-lp0571-$(date +%FT%H%M).zip
+git_archive() {
+# $1 — full path to the archive
+# $2 — dir with git
+  tar czf "$1/$2-$(uname -n)-$(date +%FT%H%M).tgz" --directory="$1" --exclude-vcs-ignores ./$2/ ./$2/.git
 }
