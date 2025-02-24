@@ -53,7 +53,7 @@ conky.config = {
 }
 
 conky.text = [[
-${color #ffb200}Ping: ${execi 3 ping -c 1 -W 1 8.8.8.8 | grep 'time=' | cut -d '=' -f 4 | cut -d ' ' -f 1} ${execi 3 ping -c 1 -W 1 teams.microsoft.com | grep 'time=' | cut -d '=' -f 4 | cut -d ' ' -f 1} ms
+${color #63af77}Ping: ${execi 3 ping -c 1 -W 1 8.8.8.8 | grep 'time=' | cut -d '=' -f 4 | cut -d ' ' -f 1} ${execi 3 ping -c 1 -W 1 teams.microsoft.com | grep 'time=' | cut -d '=' -f 4 | cut -d ' ' -f 1} ms
 ]]
 --
 -- ping -c 100 -W 1 teams.microsoft.com | grep loss | cut -d "," -f 3
