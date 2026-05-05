@@ -1,5 +1,8 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "websearch": "allow"
+  },
   "plugin": [
     "superpowers@git+https://github.com/obra/superpowers.git",
     "context-mode"
@@ -7,7 +10,9 @@
   "mcp": {
     "context-mode": {
       "type": "local",
-      "command": ["context-mode"]
+      "command": [
+        "context-mode"
+      ]
     }
   },
   "provider": {
